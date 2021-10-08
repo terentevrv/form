@@ -23,8 +23,7 @@ body {
   display: inline-block;
 }
 
-#shop input [type="radio"]
-#shop input [type="checkbox"] {
+#shop input [type="radio"] #shop input [type="checkbox"] {
   width: auto;
 }
 
@@ -32,9 +31,8 @@ body {
   display: inline-block;
 }
 #shop div {
-    display:flex;
+  display: flex;
 }
 #shop input [type="color"] {
   padding: 15px;
 }
-+
