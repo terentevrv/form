@@ -1,0 +1,40 @@
+body {
+  background: rgba(172, 115, 115, 0.479);
+}
+#shop {
+  width: 600px;
+  margin: 20px auto;
+}
+#shop input {
+  padding: 7px;
+  width: 300px;
+  box-sizing: border-box;
+  font-family: roboto, "Roboto";
+  margin: 5px 0;
+}
+
+#shop input:invalid {
+  background-color: rgb(231, 151, 151);
+}
+
+#shop fieldset > label,
+#shop div > label {
+  width: 268px;
+  display: inline-block;
+}
+
+#shop input [type="radio"]
+#shop input [type="checkbox"] {
+  width: auto;
+}
+
+#shop span {
+  display: inline-block;
+}
+#shop div {
+    display:flex;
+}
+#shop input [type="color"] {
+  padding: 15px;
+}
++

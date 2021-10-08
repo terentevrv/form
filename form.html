@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>form</title>
+</head>
+<body>
+        <form id=shop>
+<fieldset>
+    <legend>Контактная информация</legend>
+    <label>Имя</label><input type=text required><br>
+    <label>Телефон (8-xxx-xxx-xxxx)</label><input type=tel pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{4} "><br>
+    <label>Эл. почта<label><input type=email multiple placeholder="Email"><br>
+    </fieldset>
+<fieldset>
+    <legend>Дополнительная информация</legend>
+    <label>Дата рождения</label><input type="date" required><br>
+    <label>Время доставки</label><input type="time" required><br>
+    <div>
+    <label>Способ доставки</label>
+    <span>
+            <label><input type="radio" name=delivery>Самовывоз</label><br>
+            <label><input type="radio" name=delivery>Почта</label><br>
+            <label><input type="radio" name=delivery>Курьер</><br>
+    </span>
+</div>
+</fieldset>
+    
+
+    <fieldset><legend>Заказ</legend>
+    <label>Количество шариков</label><input type="number" min="2" max="20"> 
+    <label>Размер шариков</label><input type="range" min="0" max="2" value="2" > 
+    <label>Цвет шариков</label><input type="color" min="2" max="20">
+    <label>Цвет из ассортимента</label><input type="color" list="colors">
+    <datalist id=colors>
+        <option label="красный" value="#ff0000"></option>
+        <option label="синий" value="#0000ff"></option>
+        <option label="зеленый" value="#00ff00"></option>
+        <option label="желтый" value="#ffff00"></option>
+    </datalist> 
+    <div>
+        <label>Форма шарика</label>
+        <span>
+                <label><input type="checkbox" name=share >Мишка</label><br>
+                <label><input type="checkbox" name=share >Зайчик</label><br>
+                <label><input type="checkbox" name=share >Птичка</><br>
+        </span>
+    </div>
+</fieldset>
+<fieldset> <legend>Регистрация</legend>
+    <label>Пароль</label><input type="password">
+    <label>Группа</label><input type="text" list=groups>
+    <datalist id=groups>
+        <option label="(Посетитель)" value=user>
+            <option label="(Менеджер)" value=user>
+                <option label="(Администратор)" value=user>
+</fieldset>
+</fieldset>
+</fieldset>
+
+<input type=submit value="Заказать">
+    </form>
+
+
+
+
+
+</body>
+</html>
